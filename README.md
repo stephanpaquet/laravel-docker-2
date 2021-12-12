@@ -2,17 +2,18 @@
 
 ## Version
 ```
-* Laravel Framework 8.75.0
-* Composer version 2.1.14 2021-11-30 10:51:4
-* PHP 8.1.0 (fpm-fcgi) (built: Nov 30 2021 07:26:25
-* Node v16.13.1
-* Npm 8.1.2
+* Laravel: Framework 8.75.0
+* Composer: version 2.1.14 2021-11-30 10:51:4
+* PHP: 8.1.0 (fpm-fcgi) (built: Nov 30 2021 07:26:25
+* Node: v16.13.1
+* Npm: 8.1.2
+* PhpMyadmin: 5.1.1
 ```
 
 ## Installation de base sans Laravel
 ```
 git clone git@github.com:stephanpaquet/laravel-docker-2.git
-cd laravel-docker-2.git
+cd laravel-docker-2
 docker-compose up --build
 
 http://localhost/
@@ -61,3 +62,25 @@ docker-compose run --rm npm run watch-poll
 ```
 docker-compose run --rm artisan -V
 ```
+
+## MySql 
+```
+# Se connecter au shell du container de mysql
+docker exec -it laravel-docker-2_mysql_1 bash
+# et se connecter a la db
+mysql -u laravel -p laravel 
+
+# Se connecter a la bd
+docker exec -it laravel-docker-2_mysql_1 mysql -u laravel -p laravel
+
+
+# Vionner les logs
+docker logs laraveldocker-db
+```
+
+## Php Myadmin
+http://localhost:8080
+
+## MailHog
+http://localhost:8025/
+
