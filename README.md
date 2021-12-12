@@ -1,5 +1,9 @@
 # laravel-docker-2
 
+## Inspiration
+* https://laracasts.com/series/the-docker-tutorial
+* https://github.com/aschmelyun/lc-the-docker-tutorial
+
 ## Version
 ```
 * Laravel: Framework 8.75.0
