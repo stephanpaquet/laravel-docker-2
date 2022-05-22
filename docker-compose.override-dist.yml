@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  nginx:
+    user: "1000:1000"
+
+  mysql:
+    user: "1000:1000"
+
+  php:
+    user: "1000:1000"
+
+  composer:
+    user: "1000:1000"
+
+  npm:
+    user: "1000:1000"
+
+  node:
+    user: "1000:1000"
+
+  artisan:
+    user: "1000:1000"
+
+  phpmyadmin:
+    user: "1000:1000"
+
+  mailhog:
+      user: "1000:1000"
